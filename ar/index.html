@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- material css -->
+	<link rel="stylesheet" type="text/css" href="../css/materialize.min.css">
+	<!-- material icon -->
+	<!-- <link rel="stylesheet" type="text/css" href="css/materializ_icon.css"> -->
+	<link rel="stylesheet" type="text/css" href="../css/fontawesome-all.css">
+	<link rel="stylesheet" type="text/css" href="../css/css/index.css">
+	
+	<!-- for language -->
+	<link rel="stylesheet" href="../css/css/arabic/ara.css">
+	
+	<link rel="stylesheet" type="text/css" href="../css/animate.css">
+	<title>DarAlHikmeh | HOME_PAGE</title>
+</head>
+<body>
+<!--------------------------------------------- Header ---------------------------------------------->
+<header>
+	<div class="overlay">
+		<!-- logo img -->
+		<div class="logo left hide-on-small-only"><img src="../img/logo.png" width="200"></div>
+		<!-- profile img -->
+		<div class="content">
+			<a class="dropdown-trigger center profile hide-on-small-only bg-blue2 center white-text right" data-target="dropdown1"><img src="../img/avatar2.png"></a>
+			<ul id="dropdown1" class="dropdown-content">
+				<li><a class="f-weight center blue2" href="archive.html">Archive</a></li>
+				<li><a class="f-weight center blue2" href="order.html">Order</a></li>
+			</ul>
+		</div>
+		<div class="clear" style="clear:both;"></div>
+		<div class="container-fluid">
+			<!----------------------- navbar on mobile ---------------------- -->
+			<nav class="nav-wrapper hide-on-med-and-up bg-blue1 z-depth-0">
+				<div class="container">
+					<a class="sidenav-trigger" data-target="mobile_sidenav">
+							<i class="c-pointer fas fa-bars fa-lg"></i>
+					</a>
+					<a href="#" class="brand-logo center"><img src="../img/logo.png" width="58"></a>
+				</div>
+			</nav>
+			<!------------------------------- sidenav section  -->
+			<ul id="mobile_sidenav" class="sidenav bg-gray">
+				<li>
+					<div class="user-view">
+						<div class="background bg-blue1">
+						</div>
+						<a href="#user"><img class="circle" src="../img/avatar2.png"></a>
+						<a href="#name"><span class="white-text name">John Doe</span></a>
+						<a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+					</div>
+				</li>
+				<li><a href="index.html" class="blue1"><i class="fas fa-home fa-lg"></i>Home</a></li>
+				<li><a href="company.html" class="blue1"><i class="fa fa-handshake fa-lg"></i>Company</a></li>
+				<li><a href="product.html" class="blue1"><i class="fa fa-hospital fa-lg" aria-hidden="true"></i>Our Products</a></li>	
+				<li><a href="archive.html" class="blue1"><i class="fas fa-info-circle fa-lg"></i>Archive</a></li>	
+				<li><a href="login.html" class="blue1"><i class="fas fa-sign-in-alt fa-lg"></i>Login</a></li>	
+				<li class="language-sw"><a href="#" class="blue1"><i class="fa fa-globe fa-lg"></i>English</a></li>
+			</ul>
+			<!----------- info in header  -->
+			<div class="row">
+				<div class="col l8 m8 s12">
+					<div class="info left wow bounceInLeft">
+						<h4>Welcome In our website</h4>
+						<h6 class="paragraph_info bold">Get your medicen</h6>
+						<div class="left_capsul"></div>
+						<div class="right_capsul"></div>
+						<h4 class="center logo_name">DAR AL-HEKMAH</h4>
+					</div>
+				</div>
+				<div class="col l4 m4 s12">
+					<!--------------------------- navbar on large screen -->
+					<div class="navbar hide-on-small-only">
+						<ul class="navOnLargeScreen" style="overflow: hidden">
+							<li class="circle_nav center wow bounceInDown" data-wow-delay="0s"><a href="index.html" class="white-text"><i class="fas fa-home fa-lg"></i></a></li>
+							<li class="circle_nav center wow bounceInDown" data-wow-delay="0.4s"><a href="company.html" class="white-text"><i class="fa fa-handshake fa-lg"></i></a></li>
+							<li class="circle_nav center wow bounceInDown" data-wow-delay="0.8s"><a href="product.html" class="white-text"><i class="fa fa-flask fa-lg"></i></a></li>
+							<li class="circle_nav center wow bounceInDown language-sw" data-wow-delay="1.2s" style="cursor: pointer"><h5 class="pt-1 white-text">E</h5></li>
+							<li class="circle_nav center wow bounceInDown" data-wow-delay="1.6s"><a href="login.html" class="white-text"><i class="fas fa-sign-in-alt fa-lg"></i></a></li>												
+						</ul>
+					</div>
+					<!----------------------------------- navbar on large screen after scrolling -->
+					<div class="fixed-action-btn nav_after_scroll mr-5 hide-on-small-only">
+						<a class="btn-floating button_tool btn-large bg-blue1 waves-effect">
+								<i class="fas fa-bars fa-lg"></i>
+						</a>
+						<ul>
+							<li><a class="btn-floating bg-blue1" href="login.html" class="white-text"><i class="fas fa-sign-in-alt "></i></a></li>
+							<li><a class="btn-floating bg-blue1 language-sw" style="cursor: pointer"><i>E</i></a></li>
+							<li><a class="btn-floating bg-blue1" href="product.html" class="white-text"><i class="fa fa-flask "></i></a></li>
+							<li><a class="btn-floating bg-blue1" href="company.html" class="white-text"><i class="fa fa-handshake "></i></a></li>
+							<li><a class="btn-floating bg-blue1" href="index.html" class="white-text"><i class="fas fa-home "></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<!--------------------------------------------- Features section -----------------------------------------  -->
+<div class="features center">
+	<div class="container-fluid" style="overflow: hidden">
+		<div class="row">
+			<div class="col l4 m4 s12">
+				<div class="info bg-blue2">
+					<i class="fab fa-accessible-icon fa-2x wow rollIn" data-wow-offset="300"></i>
+					<h5 class="wow bounceIn" data-wow-offset="400">Order</h5>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio voluptatum est perspiciatis corporis </p>
+				</div>
+			</div>
+			<div class="col l4 m4 s12">
+				<div class="info bg-blue1">
+					<i class="fas fa-stethoscope fa-2x wow flipInX" data-wow-offset="300"></i>
+					<h5 class="wow bounceIn" data-wow-offset="400">Order</h5>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio voluptatum est perspiciatis corporis </p>
+				</div>
+			</div>
+			<div class="col l4 m4 s12">
+				<div class="info bg-blue2">
+					<i class="fas fa-flask fa-2x wow rubberBand" data-wow-offset="300"></i>
+					<h5 class="wow bounceIn" data-wow-offset="400">Order</h5>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio voluptatum est perspiciatis corporis </p>
+				</div>
+			</div>
+		</div>
+	</div>	
+</div>
+<!------------------------------------------ Advertising section ------------------------------------------- -->
+<div class="advertising  pb-5">
+	<h3 class="title pt-3 gray center">Advertising</h3>
+	<p class="center gray f-weight pt-1">See some of our latest products.</p>
+	<div class="container">
+		<div class="row mb-5">
+			<div class="col l8 m12 s12 offset-l2">
+				<div class="carousel mb-5">
+					<a href="#one!" class="carousel-item">
+						<div class="info bg-gray">
+							<div class="circle_icon pt-1 pb-1 pl-2 bg-blue1">
+								<i class="gray fa fa-circle"></i>
+								<i class="gray fa fa-circle"></i>
+								<i class="gray fa fa-circle"></i>
+							</div>
+							<img class="advertising_img" src="../img/medicen.png">
+						</div>
+					</a>
+					<a href="#two!" class="carousel-item">
+						<div class="info bg-gray">
+							<div class="circle_icon pt-1 pb-1 pl-2 bg-blue1">
+								<i class="gray fa fa-circle"></i>
+								<i class="gray fa fa-circle"></i>
+								<i class="gray fa fa-circle"></i>
+							</div>
+							<img class="advertising_img" src="../img/medicen.png">
+						</div>
+					</a>
+					<a href="#three!" class="carousel-item">
+						<div class="info bg-gray">
+							<div class="circle_icon pt-1 pb-1 pl-2 bg-blue1">
+								<i class="gray fa fa-circle"></i>
+								<i class="gray fa fa-circle"></i>
+								<i class="gray fa fa-circle"></i>
+							</div>
+							<img class="advertising_img" src="../img/medicen.png">
+						</div>
+					</a>
+					<a href="#four!" class="carousel-item">
+						<div class="info bg-gray">
+							<div class="circle_icon pt-1 pb-1 pl-2 bg-blue1">
+								<i class="gray fa fa-circle"></i>
+								<i class="gray fa fa-circle"></i>
+								<i class="gray fa fa-circle"></i>
+							</div>
+							<img class="advertising_img" src="../img/medicen.png">
+						</div>
+					</a>
+					<a href="#five!" class="carousel-item">
+						<div class="info bg-gray">
+							<div class="circle_icon pt-1 pb-1 pl-2 bg-blue1">
+								<i class="gray fa fa-circle"></i>
+								<i class="gray fa fa-circle"></i>
+								<i class="gray fa fa-circle"></i>
+							</div>
+							<img class="advertising_img" src="../img/medicen.png">
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!----------------------------------------------------- Our Product --------------------------------------  -->
+
+<section class="product">
+		<h3 class="title pt-3 center">Our Products</h3>
+		<p class="center f-weight pt-1 pb-5">I hope you funde whate you ask for in our products.</p>
+		<div class="container-fluid pt-5">
+			<div class="row">
+				<div class="mb-2 col s12 m6 product_left hover">
+					<img class="product_img" src="../img/product2.jpg">
+					<div class="overlay">
+						<div class="info">
+							<h5 class="f-weight">Cetamoul</h5>
+							<i class="fa fa-window-minimize"></i>
+							<p class="pt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+							<button class="btn button_tool">veiw more</button>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m6">
+					<div class="row">
+						<div class="col m12 s12  item_product hover">
+							<img class="product_img" src="../img/product1.jpg">
+							<div class="overlay">
+								<div class="info white-text mt-5">
+									<h6 class="f-weight">Cetamoul</h6>
+									<i class="m-0 fa fa-window-minimize"></i>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+									<button class="btn button_tool">veiw more</button>
+								</div>
+							</div>
+						</div>
+						<div class="col m6 s12 mt-2  item_product hover">
+							<img class="product_img" src="../img/product2.jpg">
+							<div class="overlay">
+								<div class="info mt-5 white-text">
+									<h6 class="f-weight">Cetamoul</h6>
+									<i class="fa fa-window-minimize"></i>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+									<button class="btn button_tool">veiw more</button>
+								</div>
+							</div>
+						</div>
+						<div class="col m6 s12  mt-2 item_product hover">
+							<img class="product_img" src="../img/product3.jpg">
+							<div class="overlay">
+								<div class="info mt-5 white-text">
+									<h6 class="f-weight">Cetamoul</h6>
+									<i class="fa fa-window-minimize"></i>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+									<button class="btn button_tool">veiw more</button>
+								</div>
+							</div>
+						</div>		
+					</div>
+				</div>
+			</div>
+		</div>
+		<button class="see_more btn-large btn-block button_tool mt-4 mb-5"><a href="product.html" class="white-text"> See our Product<i class="pl-1 fa fa-paper-plane"></i></a></button>
+	</section>
+
+<!---------------------------------------------- Contact ---------------------------------------- -->
+<div class="contact bg-gray">
+	<h3 class="title pt-1 center">Contact Us</h3>
+	<p class="center f-weight pt-1 pb-5">If you need any thing just connect with us</p>
+	<div class="container">
+		<div class="row">
+			<div class="col m4 s12">
+				<div class="about bg-blue1 white-text">
+						<div class="info">
+							<i class="fas fa-envelope fa-2x right"></i>
+							<h6 class="left">drug.store369@gmail.com</h6>
+						</div>
+						<div class="clear" style="clear:both"></div>
+						<div class="info">
+							<i class="fa fa-map-marker fa-2x right" aria-hidden="true"></i>
+							<h6 class="left">Damascus - Qatana</h6>
+						</div>
+						<div class="clear" style="clear:both"></div>
+						<div class="info">
+							<i class="fa fa-phone fa-2x right" aria-hidden="true"></i>
+							<h6 class="left">+963-950-550-334</h6>
+						</div>
+						<div class="clear" style="clear:both"></div>
+				</div>
+			</div>
+			<div class="col m8 s12 right_contact center">
+				<div class="overlay">
+					<h4 class="center contact_title">DAR AL-HEKMAH <br> STORE</h4>
+					<div class="input-field col m6 s12">
+							<i class="fa fa-envelope white-text prefix" aria-hidden="true"></i>
+							<input placeholder="Email" id="email" type="text" class="validate">
+							<label class="white-text" for="email">Email</label>
+					</div>
+					<div class="input-field col m6 s12">
+							<i class="fa fa-user-circle white-text  prefix" aria-hidden="true"></i>
+							<input placeholder="Name" id="name" type="text" class="validate">
+							<label class="white-text" for="name">Name</label>
+					</div>
+					<div class="input-field mt-5x col l12 s12">
+							<i class="fas fa-edit prefix white-text " aria-hidden="true"></i>
+							<textarea placeholder="Message" id="message" type="text" class="materialize-textarea" data-length="100"></textarea>
+							<label class="white-text" for="message">Message</label>
+					</div>
+					<button class="btn mt-3 col l4 s12 bg-blue1 waves-effect waves-light" type="submit" name="action">Submit
+						<i class="fa fa-paper-plane pr-2 right"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--------------------------------------------- FOOTER ------------------------------------------------>
+<section class="page-footer">
+	<div class="logo center">
+		<img src="../img/logo.png" alt="" width="180px" height="180px">
+	</div>
+	<div class="center">
+		<h4 class="center">DAR Al-HEKMAH</h4>
+		<i class="fab fa-facebook-f"></i>
+		<i class="fab fa-facebook-f"></i>
+		<i class="fab fa-facebook-f"></i>
+	</div>
+</section>
+<!----------------------------- Footer CopyRight -------------------->
+<section class="footer-copyright">
+	<h6 class="center white-text">&copy; CopyRight By |<span class="pl-2 gray f-weight">Lana Alzeibak & Hakam Tadmouri</span> </h6>
+</section>
+<!-- JS -->
+<script src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/materialize.min.js"></script>
+<script type="text/javascript" src="../js/wow.min.js"></script>
+<script type="text/javascript" src="../js/app.js"></script>
+</body>
+</html>

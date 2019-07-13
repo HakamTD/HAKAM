@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- material css -->
+	<link rel="stylesheet" type="text/css" href="../css/materialize.min.css">
+	<!-- material icon -->
+	<!-- <link rel="stylesheet" type="text/css" href="css/materializ_icon.css"> -->
+	<link rel="stylesheet" type="text/css" href="../css/fontawesome-all.css">
+    <link rel="stylesheet" type="text/css" href="../css/css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/css/product.css">
+
+    <!-- for language -->
+	<link rel="stylesheet" href="../css/css/arabic/ara.css">
+    
+    <link rel="stylesheet" type="text/css" href="../css/animate.css">
+    <title>View Product</title>
+</head>
+<body>
+<!--------------------------------------------- Header ---------------------------------------------->
+<header>
+    <div class="overlay">
+        <!-- search box -->
+        <div class="input-field search hide-on-small-only">
+            <a class="dropdown-trigger search_icon blue1 bg-gray" data-target="search_filter"><i class="fas fa-chevron-down blue1 center-thing center fa-lg"></i></a>
+            <ul id="search_filter" class="dropdown-content">
+                <li>
+                    <p>
+                        <label>
+                            <input class="bg-blue1" type="radio" name="filter" checked>
+                            <span>All</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="radio" name="filter" >
+                            <span>By Available</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="radio" name="filter" >
+                            <span>By Offer</span>
+                        </label>
+                    </p>
+                </li>
+            </ul>
+            <i class="fas fa-search white-text pl-1 pr-1 prefix"></i>
+            <input type="text" id="search" placeholder="Search" class="validate">
+        </div>
+        <!---------------------- search on mobile--------------- -->
+        <div class="bg-blue1 search_mobile hide-on-med-and-up center">
+            <a class="dropdown-trigger white-text" data-target="dropdown2"><i class="fas fa-search fa-lg"></i></a>
+            <ul id="dropdown2" class="dropdown-content">
+                <li>
+                    <div class="input-field">
+                            <input placeholder="Search" id="last_name" type="text" class="validate ">
+                            <label for="last_name">Search</label>
+                    </div>
+                    <p>
+                        <label>
+                            <input class="bg-blue1" type="radio" name="filter" checked>
+                            <span class="white-text">All</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="radio" name="filter" >
+                            <span class="white-text">By Available</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="radio" name="filter" >
+                            <span class="white-text">By Offer</span>
+                        </label>
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <!-- logo img -->
+        <div class="logo left hide-on-small-only"><img src="../img/logo.png" width="200"></div>
+        <!-- profile img -->
+        <div class="content">
+            <a class="dropdown-trigger profile hide-on-small-only bg-blue2 center white-text right" data-target="dropdown1"><img src="../img/person.png"></a>
+            <ul id="dropdown1" class="dropdown-content">
+                <li><a class="f-weight blue2" href="archive.html">Archive</a></li>
+                <li><a class="f-weight blue2" href="order.html">Order</a></li>
+            </ul>
+        </div>
+        <div class="clear" style="clear:both;"></div>
+        <div class="container-fluid">
+            <!----------------------- navbar on mobile ---------------------- -->
+            <nav class="nav-wrapper hide-on-med-and-up bg-blue1 z-depth-0">
+                <div class="container">
+                    <a class="sidenav-trigger" data-target="mobile_sidenav">
+                            <i class="c-pointer fas fa-bars fa-lg"></i>
+                    </a>
+                    <a href="#" class="brand-logo center"><img src="../img/logo.png" width="58"></a>
+                </div>
+            </nav>
+            <!------------------------------- sidenav section  -->
+			<ul id="mobile_sidenav" class="sidenav bg-gray">
+                <li>
+                    <div class="user-view">
+                        <div class="background bg-blue1">
+                        </div>
+                        <a href="#user"><img class="circle" src="../img/avatar2.png"></a>
+                        <a href="#name"><span class="white-text name">John Doe</span></a>
+                        <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                    </div>
+                </li>
+                <li><a href="index.html" class="blue1"><i class="fas fa-home fa-lg"></i>Home</a></li>
+                <li><a href="company.html" class="blue1"><i class="fa fa-handshake fa-lg"></i>Company</a></li>
+                <li><a href="product.html" class="blue1"><i class="fa fa-hospital fa-lg" aria-hidden="true"></i>Our Products</a></li>	
+                <li><a href="archive.html" class="blue1"><i class="fas fa-info-circle fa-lg"></i>Archive</a></li>	
+                <li><a href="login.html" class="blue1"><i class="fas fa-sign-in-alt fa-lg"></i>Login</a></li>	
+                <li class="language-sw"><a href="#" class="blue1"><i class="fa fa-globe fa-lg"></i>English</a></li>
+            </ul>
+            <div class="row">
+                <div class="col l8 m8 s12">
+                    <div class="info left">
+                        <h3 class="pb-5 pt-4">Choose Your Product </h3>
+                        <div class="left_capsul"></div>
+                        <div class="right_capsul"></div>
+                        <h4 class="center logo_name">DAR AL-HEKMAH</h4>
+                    </div>
+                </div>
+                <div class="col l4 m4 s12">
+                    <!--------------------------- navbar on large screen -->
+                    <div class="navbar hide-on-small-only">
+						<ul class="navOnLargeScreen" style="overflow: hidden">
+							<li class="circle_nav center wow bounceInDown" data-wow-delay="0s"><a href="index.html" class="white-text"><i class="fas fa-home fa-lg"></i></a></li>
+							<li class="circle_nav center wow bounceInDown" data-wow-delay="0.4s"><a href="company.html" class="white-text"><i class="fa fa-handshake fa-lg"></i></a></li>
+							<li class="circle_nav center wow bounceInDown" data-wow-delay="0.8s"><a href="product.html" class="white-text"><i class="fa fa-flask fa-lg"></i></a></li>
+							<li class="circle_nav center wow bounceInDown language-sw" data-wow-delay="1.2s" style="cursor: pointer"><h5 class="pt-1 white-text">E</h5></li>
+							<li class="circle_nav center wow bounceInDown" data-wow-delay="1.6s"><a href="login.html" class="white-text"><i class="fas fa-sign-in-alt fa-lg"></i></a></li>												
+						</ul>
+					</div>
+                    <!----------------------------------- navbar on large screen after scrolling -->
+					<div class="fixed-action-btn nav_after_scroll mr-5 hide-on-small-only">
+						<a class="btn-floating btn-large button_tool bg-blue1 waves-effect">
+                            <i class="fas fa-bars fa-lg"></i>
+                        </a>
+                        <ul>
+                            <li><a class="btn-floating bg-blue1" href="login.html" class="white-text"><i class="fas fa-sign-in-alt "></i></a></li>
+                            <li><a class="btn-floating bg-blue1 language-sw" style="cursor: pointer"><i>E</i></a></li>
+                            <li><a class="btn-floating bg-blue1" href="product.html" class="white-text"><i class="fa fa-flask "></i></a></li>
+                            <li><a class="btn-floating bg-blue1" href="company.html" class="white-text"><i class="fa fa-handshake "></i></a></li>
+                            <li><a class="btn-floating bg-blue1" href="index.html" class="white-text"><i class="fas fa-home "></i></a></li>
+                        </ul>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--  -->
+<div class="allProduct">
+    <h3 class=" pt-3 center">Our Products</h3>
+    <p class="center f-weight pt-1 pb-5">choose your Medicine from here</p>
+  <div class="continer">
+    <div class="row">
+      <div class="col l3 m4 s12">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="../img/act3.jpg" width="100px" height="150px">
+          </div>
+          <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4 pt-1">Act 3<i class="fas fa-ellipsis-v right"></i></span>
+              <span class="card-title activator grey-text text-darken-4 pt-1">Avenzor</span>
+              <button class="btn btn-block bg-blue1 button_tool waves-effect waves-light center">Order</button>
+              <input type="text" placeholder="Quantity" class="validate ml-5 w-3"> 
+          </div>
+          <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4"><h4 class="blue1">Act 3</h4><i class="fas fa-times-circle right mt-0"></i></span>
+              <p>Informatino About Medicine</p>
+              <p>Price : 53sp.</p>
+              <p>Net Price : 46sp.</p>
+              <p>Available</p>
+              <ul>
+                  <h5 class="blue1">Offer:</h5>
+                  <li class="ml-2">Discounts: <span>5%.</span></li>
+                  <li class="ml-2">Gifts: <span>with every 10 pieces 1 free.</span></li>
+              </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col l3 m4 s12">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="../img/act3.jpg" width="100px" height="150px">
+          </div>
+          <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4 pt-1">Act 3<i class="fas fa-ellipsis-v right"></i></span>
+              <span class="card-title activator grey-text text-darken-4 pt-1">Avenzor</span>
+              <button class="btn btn-block bg-blue1 button_tool waves-effect waves-light center">Order</button>
+              <input type="text" placeholder="Quantity" class="validate ml-5 w-3"> 
+          </div>
+          <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4"><h4 class="blue1">Act 3</h4><i class="fas fa-times-circle right mt-0"></i></span>
+              <p>Informatino About Medicine</p>
+              <p>Price : 53sp.</p>
+              <p>Net Price : 46sp.</p>
+              <p>Available</p>
+              <ul>
+                  <h5 class="blue1">Offer:</h5>
+                  <li class="ml-2">Discounts: <span>5%.</span></li>
+                  <li class="ml-2">Gifts: <span>with every 10 pieces 1 free.</span></li>
+              </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col l3 m4 s12">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="../img/act3.jpg" width="100px" height="150px">
+          </div>
+          <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4 pt-1">Act 3<i class="fas fa-ellipsis-v right"></i></span>
+              <span class="card-title activator grey-text text-darken-4 pt-1">Avenzor</span>
+              <button class="btn btn-block bg-blue1 button_tool waves-effect waves-light center">Order</button>
+              <input type="text" placeholder="Quantity" class="validate ml-5 w-3"> 
+          </div>
+          <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4"><h4 class="blue1">Act 3</h4><i class="fas fa-times-circle right mt-0"></i></span>
+              <p>Informatino About Medicine</p>
+              <p>Price : 53sp.</p>
+              <p>Net Price : 46sp.</p>
+              <p>Available</p>
+              <ul>
+                  <h5 class="blue1">Offer:</h5>
+                  <li class="ml-2">Discounts: <span>5%.</span></li>
+                  <li class="ml-2">Gifts: <span>with every 10 pieces 1 free.</span></li>
+              </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col l3 m4 s12">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="../img/act3.jpg" width="100px" height="150px">
+          </div>
+          <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4 pt-1">Act 3<i class="fas fa-ellipsis-v right"></i></span>
+              <span class="card-title activator grey-text text-darken-4 pt-1">Avenzor</span>
+              <button class="btn btn-block bg-blue1 button_tool waves-effect waves-light center">Order</button>
+              <input type="text" placeholder="Quantity" class="validate ml-5 w-3"> 
+          </div>
+          <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4"><h4 class="blue1">Act 3</h4><i class="fas fa-times-circle right mt-0"></i></span>
+              <p>Informatino About Medicine</p>
+              <p>Price : 53sp.</p>
+              <p>Net Price : 46sp.</p>
+              <p>Available</p>
+              <ul>
+                  <h5 class="blue1">Offer:</h5>
+                  <li class="ml-2">Discounts: <span>5%.</span></li>
+                  <li class="ml-2">Gifts: <span>with every 10 pieces 1 free.</span></li>
+              </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col l3 m4 s12">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="../img/act3.jpg" width="100px" height="150px">
+          </div>
+          <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4 pt-1">Act 3<i class="fas fa-ellipsis-v right"></i></span>
+              <span class="card-title activator grey-text text-darken-4 pt-1">Avenzor</span>
+              <button class="btn btn-block bg-blue1 button_tool waves-effect waves-light center">Order</button>
+              <input type="text" placeholder="Quantity" class="validate ml-5 w-3"> 
+          </div>
+          <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4"><h4 class="blue1">Act 3</h4><i class="fas fa-times-circle right mt-0"></i></span>
+              <p>Informatino About Medicine</p>
+              <p>Price : 53sp.</p>
+              <p>Net Price : 46sp.</p>
+              <p>Available</p>
+              <ul>
+                  <h5 class="blue1">Offer:</h5>
+                  <li class="ml-2">Discounts: <span>5%.</span></li>
+                  <li class="ml-2">Gifts: <span>with every 10 pieces 1 free.</span></li>
+              </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col l3 m4 s12">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="../img/act3.jpg" width="100px" height="150px">
+          </div>
+          <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4 pt-1">Act 3<i class="fas fa-ellipsis-v right"></i></span>
+              <span class="card-title activator grey-text text-darken-4 pt-1">Avenzor</span>
+              <button class="btn btn-block bg-blue1 button_tool waves-effect waves-light center">Order</button>
+              <input type="text" placeholder="Quantity" class="validate ml-5 w-3"> 
+          </div>
+          <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4"><h4 class="blue1">Act 3</h4><i class="fas fa-times-circle right mt-0"></i></span>
+              <p>Informatino About Medicine</p>
+              <p>Price : 53sp.</p>
+              <p>Net Price : 46sp.</p>
+              <p>Available</p>
+              <ul>
+                  <h5 class="blue1">Offer:</h5>
+                  <li class="ml-2">Discounts: <span>5%.</span></li>
+                  <li class="ml-2">Gifts: <span>with every 10 pieces 1 free.</span></li>
+              </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col l3 m4 s12">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="../img/act3.jpg" width="100px" height="150px">
+          </div>
+          <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4 pt-1">Act 3<i class="fas fa-ellipsis-v right"></i></span>
+              <span class="card-title activator grey-text text-darken-4 pt-1">Avenzor</span>
+              <button class="btn btn-block bg-blue1 button_tool waves-effect waves-light center">Order</button>
+              <input type="text" placeholder="Quantity" class="validate ml-5 w-3"> 
+          </div>
+          <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4"><h4 class="blue1">Act 3</h4><i class="fas fa-times-circle right mt-0"></i></span>
+              <p>Informatino About Medicine</p>
+              <p>Price : 53sp.</p>
+              <p>Net Price : 46sp.</p>
+              <p>Available</p>
+              <ul>
+                  <h5 class="blue1">Offer:</h5>
+                  <li class="ml-2">Discounts: <span>5%.</span></li>
+                  <li class="ml-2">Gifts: <span>with every 10 pieces 1 free.</span></li>
+              </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col l3 m4 s12">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="../img/act3.jpg" width="100px" height="150px">
+          </div>
+          <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4 pt-1">Act 3<i class="fas fa-ellipsis-v right"></i></span>
+              <span class="card-title activator grey-text text-darken-4 pt-1">Avenzor</span>
+              <button class="btn btn-block bg-blue1 button_tool waves-effect waves-light center">Order</button>
+              <input type="text" placeholder="Quantity" class="validate ml-5 w-3"> 
+          </div>
+          <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4"><h4 class="blue1">Act 3</h4><i class="fas fa-times-circle right mt-0"></i></span>
+              <p>Informatino About Medicine</p>
+              <p>Price : 53sp.</p>
+              <p>Net Price : 46sp.</p>
+              <p>Available</p>
+              <ul>
+                  <h5 class="blue1">Offer:</h5>
+                  <li class="ml-2">Discounts: <span>5%.</span></li>
+                  <li class="ml-2">Gifts: <span>with every 10 pieces 1 free.</span></li>
+              </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col l3 m4 s12">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="../img/act3.jpg" width="100px" height="150px">
+          </div>
+          <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4 pt-1">Act 3<i class="fas fa-ellipsis-v right"></i></span>
+              <span class="card-title activator grey-text text-darken-4 pt-1">Avenzor</span>
+              <button class="btn btn-block bg-blue1 button_tool waves-effect waves-light center">Order</button>
+              <input type="text" placeholder="Quantity" class="validate ml-5 w-3"> 
+          </div>
+          <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4"><h4 class="blue1">Act 3</h4><i class="fas fa-times-circle right mt-0"></i></span>
+              <p>Informatino About Medicine</p>
+              <p>Price : 53sp.</p>
+              <p>Net Price : 46sp.</p>
+              <p>Available</p>
+              <ul>
+                  <h5 class="blue1">Offer:</h5>
+                  <li class="ml-2">Discounts: <span>5%.</span></li>
+                  <li class="ml-2">Gifts: <span>with every 10 pieces 1 free.</span></li>
+              </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col l3 m4 s12">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="../img/act3.jpg" width="100px" height="150px">
+          </div>
+          <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4 pt-1">Act 3<i class="fas fa-ellipsis-v right"></i></span>
+              <span class="card-title activator grey-text text-darken-4 pt-1">Avenzor</span>
+              <button class="btn btn-block bg-blue1 button_tool waves-effect waves-light center">Order</button>
+              <input type="text" placeholder="Quantity" class="validate ml-5 w-3"> 
+          </div>
+          <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4"><h4 class="blue1">Act 3</h4><i class="fas fa-times-circle right mt-0"></i></span>
+              <p>Informatino About Medicine</p>
+              <p>Price : 53sp.</p>
+              <p>Net Price : 46sp.</p>
+              <p>Available</p>
+              <ul>
+                  <h5 class="blue1">Offer:</h5>
+                  <li class="ml-2">Discounts: <span>5%.</span></li>
+                  <li class="ml-2">Gifts: <span>with every 10 pieces 1 free.</span></li>
+              </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col l3 m4 s12">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="../img/act3.jpg" width="100px" height="150px">
+          </div>
+          <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4 pt-1">Act 3<i class="fas fa-ellipsis-v right"></i></span>
+              <span class="card-title activator grey-text text-darken-4 pt-1">Avenzor</span>
+              <button class="btn btn-block bg-blue1 button_tool waves-effect waves-light center">Order</button>
+              <input type="text" placeholder="Quantity" class="validate ml-5 w-3"> 
+          </div>
+          <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4"><h4 class="blue1">Act 3</h4><i class="fas fa-times-circle right mt-0"></i></span>
+              <p>Informatino About Medicine</p>
+              <p>Price : 53sp.</p>
+              <p>Net Price : 46sp.</p>
+              <p>Available</p>
+              <ul>
+                  <h5 class="blue1">Offer:</h5>
+                  <li class="ml-2">Discounts: <span>5%.</span></li>
+                  <li class="ml-2">Gifts: <span>with every 10 pieces 1 free.</span></li>
+              </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col l3 m4 s12">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="../img/act3.jpg" width="100px" height="150px">
+          </div>
+          <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4 pt-1">Act 3<i class="fas fa-ellipsis-v right"></i></span>
+              <span class="card-title activator grey-text text-darken-4 pt-1">Avenzor</span>
+              <button class="btn btn-block bg-blue1 button_tool waves-effect waves-light center">Order</button>
+              <input type="text" placeholder="Quantity" class="validate ml-5 w-3"> 
+          </div>
+          <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4"><h4 class="blue1">Act 3</h4><i class="fas fa-times-circle right mt-0"></i></span>
+              <p>Informatino About Medicine</p>
+              <p>Price : 53sp.</p>
+              <p>Net Price : 46sp.</p>
+              <p>Available</p>
+              <ul>
+                  <h5 class="blue1">Offer:</h5>
+                  <li class="ml-2">Discounts: <span>5%.</span></li>
+                  <li class="ml-2">Gifts: <span>with every 10 pieces 1 free.</span></li>
+              </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col l3 m4 s12">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="../img/act3.jpg" width="100px" height="150px">
+          </div>
+          <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4 pt-1">Act 3<i class="fas fa-ellipsis-v right"></i></span>
+              <span class="card-title activator grey-text text-darken-4 pt-1">Avenzor</span>
+              <button class="btn btn-block bg-blue1 button_tool waves-effect waves-light center">Order</button>
+              <input type="text" placeholder="Quantity" class="validate ml-5 w-3"> 
+          </div>
+          <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4"><h4 class="blue1">Act 3</h4><i class="fas fa-times-circle right mt-0"></i></span>
+              <p>Informatino About Medicine</p>
+              <p>Price : 53sp.</p>
+              <p>Net Price : 46sp.</p>
+              <p>Available</p>
+              <ul>
+                  <h5 class="blue1">Offer:</h5>
+                  <li class="ml-2">Discounts: <span>5%.</span></li>
+                  <li class="ml-2">Gifts: <span>with every 10 pieces 1 free.</span></li>
+              </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col l3 m4 s12">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="../img/act3.jpg" width="100px" height="150px">
+          </div>
+          <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4 pt-1">Act 3<i class="fas fa-ellipsis-v right"></i></span>
+              <span class="card-title activator grey-text text-darken-4 pt-1">Avenzor</span>
+              <button class="btn btn-block bg-blue1 button_tool waves-effect waves-light center">Order</button>
+              <input type="text" placeholder="Quantity" class="validate ml-5 w-3"> 
+          </div>
+          <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4"><h4 class="blue1">Act 3</h4><i class="fas fa-times-circle right mt-0"></i></span>
+              <p>Informatino About Medicine</p>
+              <p>Price : 53sp.</p>
+              <p>Net Price : 46sp.</p>
+              <p>Available</p>
+              <ul>
+                  <h5 class="blue1">Offer:</h5>
+                  <li class="ml-2">Discounts: <span>5%.</span></li>
+                  <li class="ml-2">Gifts: <span>with every 10 pieces 1 free.</span></li>
+              </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col l3 m4 s12">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="../img/act3.jpg" width="100px" height="150px">
+          </div>
+          <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4 pt-1">Act 3<i class="fas fa-ellipsis-v right"></i></span>
+              <span class="card-title activator grey-text text-darken-4 pt-1">Avenzor</span>
+              <button class="btn btn-block bg-blue1 button_tool waves-effect waves-light center">Order</button>
+              <input type="text" placeholder="Quantity" class="validate ml-5 w-3"> 
+          </div>
+          <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4"><h4 class="blue1">Act 3</h4><i class="fas fa-times-circle right mt-0"></i></span>
+              <p>Informatino About Medicine</p>
+              <p>Price : 53sp.</p>
+              <p>Net Price : 46sp.</p>
+              <p>Available</p>
+              <ul>
+                  <h5 class="blue1">Offer:</h5>
+                  <li class="ml-2">Discounts: <span>5%.</span></li>
+                  <li class="ml-2">Gifts: <span>with every 10 pieces 1 free.</span></li>
+              </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col l3 m4 s12">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="../img/act3.jpg" width="100px" height="150px">
+          </div>
+          <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4 pt-1">Act 3<i class="fas fa-ellipsis-v right"></i></span>
+              <span class="card-title activator grey-text text-darken-4 pt-1">Avenzor</span>
+              <button class="btn btn-block bg-blue1 button_tool waves-effect waves-light center">Order</button>
+              <input type="text" placeholder="Quantity" class="validate ml-5 w-3"> 
+          </div>
+          <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4"><h4 class="blue1">Act 3</h4><i class="fas fa-times-circle right mt-0"></i></span>
+              <p>Informatino About Medicine</p>
+              <p>Price : 53sp.</p>
+              <p>Net Price : 46sp.</p>
+              <p>Available</p>
+              <ul>
+                  <h5 class="blue1">Offer:</h5>
+                  <li class="ml-2">Discounts: <span>5%.</span></li>
+                  <li class="ml-2">Gifts: <span>with every 10 pieces 1 free.</span></li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!--------------------------------------------- FOOTER ------------------------------------------------>
+<section class="page-footer">
+    <div class="logo center">
+        <img src="../img/logo.png" alt="" width="180px" height="180px">
+    </div>
+    <div class="center">
+        <h4 class="center">DAR Al-HEKMAH</h4>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-facebook-f"></i>
+    </div>
+</section>
+<!----------------------------- Footer CopyRight -------------------->
+<section class="footer-copyright">
+    <h6 class="center white-text">&copy; CopyRight By |<span class="pl-2 gray f-weight">Lana Alzeibak & Hakam Tadmouri</span> </h6>
+</section>
+    <!-- JS -->
+<script src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/materialize.min.js"></script>
+<script type="text/javascript" src="../js/wow.min.js"></script>
+<script type="text/javascript" src="../js/app.js"></script>    
+</body>
+</html>

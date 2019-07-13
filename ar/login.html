@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- material css -->
+	<link rel="stylesheet" type="text/css" href="../css/materialize.min.css">
+	<!-- material icon -->
+	<!-- <link rel="stylesheet" type="text/css" href="css/materializ_icon.css"> -->
+	<link rel="stylesheet" type="text/css" href="../css/fontawesome-all.css">
+  <link rel="stylesheet" type="text/css" href="../css/css/login.css">
+
+  <!-- for language -->
+  <link rel="stylesheet" href="../css/css/arabic/ara.css">
+  
+	<link rel="stylesheet" type="text/css" href="../css/animate.css">
+	<title>DarAlHikmeh | LOGIN_PAGE</title>
+</head>
+<body>
+<!--------------------------------------------- Header ---------------------------------------------->
+<div class="container-fluid">
+    <!----------------------- navbar on mobile ---------------------- -->
+    <nav class="nav-wrapper hide-on-med-and-up bg-blue1 z-depth-0">
+        <div class="container">
+        <a class="sidenav-trigger" data-target="mobile_sidenav">
+            <i class="c-pointer fas fa-bars fa-lg"></i>
+        </a>
+        <a href="#" class="brand-logo center"><img src="../img/logo.png" width="58"></a>
+        </div>
+    </nav>
+    <!------------------------------- sidenav section  -->
+    <ul id="mobile_sidenav" class="sidenav bg-gray">
+        <li>
+            <div class="user-view">
+                <div class="background bg-blue1">
+                </div>
+                <a href="#user"><img class="circle" src="../img/avatar2.png"></a>
+                <a href="#name"><span class="white-text name">John Doe</span></a>
+                <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+            </div>
+        </li>
+        <li><a href="index.html" class="blue1"><i class="fas fa-home fa-lg"></i>Home</a></li>
+        <li><a href="company.html" class="blue1"><i class="fa fa-handshake fa-lg"></i>Company</a></li>
+        <li><a href="product.html" class="blue1"><i class="fa fa-hospital fa-lg" aria-hidden="true"></i>Our Products</a></li>	
+        <li><a href="archive.html" class="blue1"><i class="fas fa-info-circle fa-lg"></i>Archive</a></li>	
+        <li><a href="login.html" class="blue1"><i class="fas fa-sign-in-alt fa-lg"></i>Login</a></li>	
+        <li class="language-sw"><a href="#" class="blue1"><i class="fa fa-globe fa-lg"></i>English</a></li>
+    </ul>
+</div>
+<!---------------- navbar on large screen after scrolling -->
+<div class="fixed-action-btn mr-5 hide-on-small-only">
+  <a class="btn-floating btn-large bg-blue1 waves-effect">
+    <i class="fas fa-bars fa-lg"></i>
+  </a>
+  <ul>
+    <li><a class="btn-floating bg-blue1" href="login.html" class="white-text"><i class="fas fa-sign-in-alt "></i></a></li>
+    <li><a class="btn-floating bg-blue1 language-sw" style="cursor: pointer"><i>E</i></a></li>
+    <li><a class="btn-floating bg-blue1" href="product.html" class="white-text"><i class="fa fa-flask "></i></a></li>
+    <li><a class="btn-floating bg-blue1" href="company.html" class="white-text"><i class="fa fa-handshake "></i></a></li>
+    <li><a class="btn-floating bg-blue1" href="index.html" class="white-text"><i class="fas fa-home "></i></a></li>
+  </ul>
+</div>
+<!--------------------------------------------------- Login Section ------------------------------------- -->
+<div class="login pt-5 pb-5">
+  <div class="container">
+    <div class="row">
+      <div class="col l8 s12 offset-l2">
+        <ul id="tabs-swiper-demo" class="tabs">
+          <li class="tab col s3"><a class=" f-weight blue1 active" href="#login">Login</a></li>
+          <li class="tab col s3"><a class="f-weight" href="#sign_up ">sign Up</a></li>
+        </ul>
+        <!--------------------- Login -------------------  -->
+        <div id="login" class="login_info col s12 bg-blue1">
+          <div class="mt-5 input-field col l12 m12 s12">
+            <i class="white-text fas fa-envelope prefix"></i>
+            <input placeholder="Email" type="email" id="email" class="validate">
+            <label class="white-text" for="email">Email</label>
+          </div>
+          <div class="mt-3 mb-5 input-field col l12 m12 s12">
+            <i class="white-text fa fa-lock prefix"></i>
+            <input placeholder="password" type="password" id="password" class="validate">
+            <label class="white-text" for="password">password</label>
+          </div>
+          <label class="mt-1 ml-2 white-text left m12 s12">Forget Password?</label>
+            <form class="mb-5 ml-2 m12 s12 right" action="#">
+              <p>
+                <label class="white-text">
+                  <input type="checkbox" class="white-text">
+                  <span class="white-text">Remamber me</span>
+                </label>
+              </p>
+            </form>
+          <a href="#" class="btn waves-effect button_tool_white  waves-black submite_btn"><i class="fas fa-caret-right fa-7x"></i> </a>
+        </div>
+        <!-------------------- Sign Up ----------------------  -->
+        <div id="sign_up" class="sign_up_info col s12 bg-blue1">
+          <div class="mt-2 input-field col l6 m6 s12">
+            <i class="white-text fas fa-envelope prefix"></i>
+            <input placeholder="Email" type="email" id="email" class="validate">
+            <label class="white-text" for="email">Email</label>
+          </div>
+          <div class="mt-2 input-field col l6 m6 s12">
+            <i class="white-text fas fa-lock prefix"></i>
+            <input placeholder="password" type="password" id="password" class="validate">
+            <label class="white-text" for="password">password</label>
+          </div>
+          <div class="mt-2 input-field col l6 m6 s12">
+            <i class="white-text fas fa-user prefix"></i>
+            <input placeholder="Name" type="text" id="text1" class="validate">
+            <label class="white-text" for="text1">Name</label>
+          </div>
+          <div class="mt-2 input-field col l6 m6 s12">
+            <i class="white-text fas fa-medkit prefix"></i>
+            <input placeholder="Pharmicy Name" type="text" id="text2" class="validate">
+            <label class="white-text" for="text2">Pharmicy Name</label>
+          </div>
+          <div class="mt-2 input-field col l6 m6 s12">
+            <i class="white-text fas fa-map prefix"></i>
+            <input placeholder="Location" type="text" id="text3" class="validate">
+            <label class="white-text" for="text3">Location</label>
+          </div>
+          <div class="mt-2 input-field col l6 m6 s12">
+            <i class="white-text fas fa-child prefix"></i>
+            <input placeholder="Free days" type="text" id="text4" class="validate">
+            <label class="white-text" for="text4">free days</label>
+          </div>
+          <div class="mt-2 mb-5 input-field col l6 m6 s12">
+            <i class="white-text fas fa-phone prefix"></i>
+            <input placeholder="Your number" type="text" id="text5" class="validate">
+            <label class="white-text" for="text5">Your number</label>
+          </div>
+          <form class="mt-2 col l6 m6 s12" action="#">
+            <div class="file-field upload_field input-field">
+              <div class="btn button_tool bg-blue2">
+                <span><i class="fas fa-cloud white-text"></i></span>
+                <input type="file" multiple>
+              </div>
+              <div class="file-path-wrapper">
+                <input class="file-path validate" type="text" placeholder="Upload photo">
+              </div>
+            </div>
+          </form>
+          <a href="#" class="btn submite_btn button_tool_white"><i class="fas fa-caret-right fa-7x"></i> </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!--------------------------------------------- FOOTER ------------------------------------------------>
+<section class="page-footer">
+	<div class="logo center">
+		<img src="../img/logo.png" alt="" width="180px" height="180px">
+	</div>
+	<div class="center">
+		<h4 class="center">DAR Al-HEKMAH</h4>
+		<i class="fab fa-facebook-f"></i>
+		<i class="fab fa-facebook-f"></i>
+		<i class="fab fa-facebook-f"></i>
+	</div>
+</section>
+<!----------------------------- Footer CopyRight -------------------->
+<section class="footer-copyright">
+	<h6 class="center white-text">&copy; CopyRight By |<span class="pl-2 gray f-weight">Lana Alzeibak & Hakam Tadmouri</span> </h6>
+</section>
+<!-- JS -->
+<script src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/materialize.min.js"></script>
+<script type="text/javascript" src="../js/wow.min.js"></script>
+<script type="text/javascript" src="../js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+.row .col {
+  float: right; }
+
+.input-field {
+  padding-right: 8px !important;
+  color: #FFF; }
+  .input-field input, .input-field textarea {
+    text-align: right; }
+  .input-field label {
+    display: none; }
+  .input-field .prefix {
+    right: -22px; }
+
+.card-reveal {
+  text-align: right; }
+
+.card .fa-times-circle {
+  margin-top: -24%;
+  float: left !important; }
+
+header .navbar {
+  float: left;
+  margin-left: 18%; }
+
+.advertising .row .col {
+  float: left; }
+
+.product .col {
+  left: 18px !important; }
+
+.contact .about {
+  border-radius: 0px 7px 7px 0px; }
+.contact .right_contact {
+  border-radius: 7px 0px 0px 7px; }
+
+.login .row .col {
+  float: left !important; }
+.login .input-field {
+  padding-right: 30px !important; }
+  .login .input-field input {
+    color: #FFF; }
+  .login .input-field label {
+    display: none; }
+.login .file-field .btn, .login .file-field .btn-large, .login .file-field .btn-small {
+  float: right; }
+.login .upload_field {
+  margin-left: 10%; }
+.login .file-field .file-path-wrapper {
+  margin-right: 35%; }
+
+.archive h6 {
+  text-align: right; }
+.archive .input-field .prefix ~ input, .archive .input-field .prefix ~ textarea, .archive .input-field .prefix ~ label, .archive .input-field .prefix ~ .validate ~ label, .archive .input-field .prefix ~ .helper-text, .archive .input-field .prefix ~ .autocomplete-content {
+  margin-left: 1rem; }
+
+.archive .right_tab {
+  right: 400px !important;
+  border-radius: 20px 0px 0px 20px; }
+
+.archive .left_tabs {
+  right: 200px !important;
+  border-radius: 0px 20px 20px 0px; }
+
+.order .info {
+  text-align: right; }
+.order .button_tool {
+  float: right; }
+
+.search .prefix {
+  left: 5px; }
+.search label {
+  display: block !important; }
+
+/*# sourceMappingURL=ara.css.map */

@@ -1,0 +1,23 @@
+header .navbar {
+  float: right;
+  margin-right: 18%; }
+
+.adverrtising .row .col {
+  float: left !important; }
+
+.product .col {
+  left: 5px !important; }
+
+.contact .about {
+  border-radius: 7px 0px 0px 7px; }
+.contact .right_contact {
+  border-radius: 0px 7px 7px 0px; }
+
+.archive .left_tabs {
+  left: 200px;
+  border-radius: 20px 0px 0px 20px; }
+.archive .right_tab {
+  left: 400px;
+  border-radius: 0px 20px 20px 0px; }
+
+/*# sourceMappingURL=eng.css.map */
